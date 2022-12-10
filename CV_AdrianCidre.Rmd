@@ -1,0 +1,169 @@
+---
+name: "Adrián"
+surname: "Cidre González"
+position: "Research Assistant"
+address: "Department of Forestry Engineering, University of Córdoba"
+profilepic: "../img/me.jpg"
+#www: mariecurie.com 
+email: "adrian.cidre@gmail.com"
+#twitter: mariecurie
+github: Cidree
+linkedin: adrian-cidre
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 990000
+aboutme: ""
+docname: CV
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "University of Córdoba", "2022-2023", "Master in Geomatics, Remote Sensing and Spatial Models Applied to Forest Management", "Córdoba, Spain",
+  
+  
+  "National University of Distance Education", "2022-2023", "Expert Title in Advance Applied Statistics", "Online",
+  
+  "University of Santiago de Compostela", "2018-2022", "Bachelor in Forestry and Landscape Engineering", "Lugo, Spain",
+  
+  "University of Córdoba", "09/2021-02/2022", "SICUE Exchange Programme - Forestry Engineering", "Córdoba, Spain",
+  
+  "University of Eastern Finland", "01/2021-06/2021", "Erasmus - Forestry Engineering", "Joensuu, Finland",
+  
+  "IES Plurilingüe San Rosendo", "2016-2018", "Certificate of Higher Education in Forestry", "Mondoñedo, Spain",
+) |> 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work Experience
+
+```{r}
+tribble(
+    ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-2021-SAP-CLIMA-101074466 FAGESOS",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, RMarkdown, SQL, Python, CSS",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, ArcGIS Pro, Google Earth Engine, QGIS, PostGreSQL+PostGIS, OSGeo4W Shell",
+    
+    "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2022 --- Technician of wildland fire helitack crew",
+    "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2021 --- Foreman of wildland fire helitack crew",
+    
+    "Forestry Erasmus Internship", "University of Brno", "March", 2021, "--> May", 2022, "Brno - Czech Republic", "TASKS --- Reforestation, pruning, forest inventory",
+    
+    "Wildland Firefighter", "Demontes, S.L.", "Summer", 2020, NA, NA, "Galicia - Spain", "2020 --- Wildland firefighter at helitack crew",
+    
+    "Wildland Firefighter", "Demontes, S.L.", "Summer", 2019, NA, NA, "Galicia - Spain", "2019 --- Wildland firefighter at helitack crew",
+    
+    "Wildland Firefighter", "Empresa Pública de Servicios Agrarios Galegos, S.A.", "Summer", 2018, NA, NA, "Galicia - Spain", "2018 --- Wildland firefighter at terrestial crew",
+    
+    "Forestry Internship", "Servitec Medioambiente, S.L.", "March", 2018, "June", 2018, "Galicia - Spain", "TASKS --- Data analysis in QGIS, forest inventory",
+    
+    
+) |> 
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear}  {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+\newpage
+
+# Skills  
+
+```{r}
+tribble(
+    ~area, ~skills,
+    "Programming Languages", "R, Python, SQL for PostGreSQL+PostGIS, JavaScript for Google Earth Engine",
+    "Markup Languages", "RMarkdown, CSS",
+    
+    "Specific Software", "Posit (RStudio), ArcGIS Pro, QGIS, PostGreQSL, Tableau"
+) |> 
+  detailed_entries(
+    with = area,
+    what = skills
+)
+```
+
+# Projects
+
+```{r}
+tribble(
+    ~area, ~accomplishment, ~year, ~where, ~detail,
+    "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "University of Córdoba", 2022, "LIFE Project", "Developted models of Phytophothora cinnamomi risk at Occidental Europe level",
+    
+    
+    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", "NA"
+    
+) |> 
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
+
+# Complementary Edutation  
+
+```{r}
+tribble(
+    ~area, ~accomplishment, ~year, ~where, ~detail,
+    "Courses of R in Udemy", "", "", "", "Artificial Intelligence Bootcamp in R Programming",
+    "Courses of R in Udemy", "", "", "", "Survival Analysis in R",
+    "Courses of R in Udemy", "", "", "", "Spatial Data Analysis with R and QGIS",
+    "Courses of R in Udemy", "", "", "", "Learn ggplot2 in R for Data Visualization",
+    "Courses of R in Udemy", "", "", "", "Curso avanzado de estadística multivariante con R y Python",
+    "Courses of R in Udemy", "", "", "", "Ecology in R",
+    
+    
+    "Other Courses in Udemy", "", "","", "Python for Data Science and Machine Learning Bootcamp",
+    
+    "Other Courses in Udemy", "", "","", "Google Earth Engine y Machine Learning: de cero a experto",
+
+) |> 
+   detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
