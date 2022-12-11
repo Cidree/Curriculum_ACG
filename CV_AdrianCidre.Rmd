@@ -3,7 +3,7 @@ name: "Adrián"
 surname: "Cidre González"
 position: "Research Assistant"
 address: "Department of Forestry Engineering, University of Córdoba"
-profilepic: "../img/me.jpg"
+profilepic: "img/me.jpg"
 #www: mariecurie.com 
 email: "adrian.cidre@gmail.com"
 #twitter: mariecurie
