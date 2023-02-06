@@ -11,7 +11,7 @@ github: Cidree
 linkedin: adrian-cidre
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 990000
-aboutme: ""
+aboutme: "As a highly motivated and enthusiastic professional with a strong background in forest sciences, I bring a wealth of knowledge and experience to any organization. With extensive training in programming using R, forest data analysis, and the application of machine learning in forestry, I have a proven track record of success in these areas. I am eager to leverage my skills and passion to drive growth and make a significant impact in a dynamic and challenging environment."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -63,7 +63,7 @@ tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-2021-SAP-CLIMA-101074466 FAGESOS",
     "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, RMarkdown, SQL, Python, CSS",
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, ArcGIS Pro, Google Earth Engine, QGIS, PostGreSQL+PostGIS, OSGeo4W Shell",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, ArcGIS Pro, Google Earth Engine, QGIS, PostGreSQL+PostGIS",
     
     "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2022 --- Technician of wildland fire helitack crew",
     "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2021 --- Foreman of wildland fire helitack crew",
@@ -98,7 +98,7 @@ tribble(
 tribble(
     ~area, ~skills,
     "Programming Languages", "R, Python, SQL for PostGreSQL+PostGIS, JavaScript for Google Earth Engine",
-    "Markup Languages", "RMarkdown, CSS",
+    "Other Languages", "RMarkdown, CSS, HTML",
     
     "Specific Software", "Posit (RStudio), ArcGIS Pro, QGIS, PostGreQSL, Tableau"
 ) |> 
@@ -116,7 +116,7 @@ tribble(
     "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "University of Córdoba", 2022, "LIFE Project", "Developted models of Phytophothora cinnamomi risk at Occidental Europe level",
     
     
-    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", "NA"
+    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", NA
     
 ) |> 
   detailed_entries(
@@ -144,6 +144,8 @@ tribble(
     "Other Courses in Udemy", "", "","", "Python for Data Science and Machine Learning Bootcamp",
     
     "Other Courses in Udemy", "", "","", "Google Earth Engine y Machine Learning: de cero a experto",
+    
+    "Other relevant courses", "", "", "", "Inventarios Naturales de Flora y Fauna"
 
 ) |> 
    detailed_entries(
