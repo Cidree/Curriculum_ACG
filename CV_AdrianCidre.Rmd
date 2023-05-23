@@ -61,9 +61,9 @@ tribble(
 ```{r}
 tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-2021-SAP-CLIMA-101074466 FAGESOS",
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, RMarkdown, SQL, Python, CSS",
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, ArcGIS Pro, Google Earth Engine, QGIS, PostGreSQL+PostGIS",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-FAGESOS",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, Quarto, SQL, Python, CSS",
+    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, ArcGIS Pro, Google Earth Engine, QGIS, PostgreSQL+PostGIS",
     
     "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2022 --- Technician of wildland fire helitack crew",
     "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2021 --- Foreman of wildland fire helitack crew",
@@ -97,10 +97,10 @@ tribble(
 ```{r}
 tribble(
     ~area, ~skills,
-    "Programming Languages", "R, Python, SQL for PostGreSQL+PostGIS, JavaScript for Google Earth Engine",
-    "Other Languages", "RMarkdown, CSS, HTML",
+    "Programming Languages", "R, SQL, JavaScript for Google Earth Engine, Python",
+    "Other Languages", "Markdown, CSS, HTML",
     
-    "Specific Software", "Posit (RStudio), ArcGIS Pro, QGIS, PostGreQSL, Tableau"
+    "Specific Software", "RStudio, Quarto, ArcGIS Pro, QGIS, PostgreSQL+PostGIS, Tableau"
 ) |> 
   detailed_entries(
     with = area,
