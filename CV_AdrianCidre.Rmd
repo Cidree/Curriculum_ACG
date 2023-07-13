@@ -8,7 +8,7 @@ email: "adrian.cidre@gmail.com"
 #twitter: mariecurie
 github: Cidree
 linkedin: adrian-cidre
-date: "June 2023"
+date: "July 2023"
 headcolor: 990000
 aboutme: "Passionate about forestry and armed with years of experience in the field, I bring a wealth of knowledge and expertise to any organization. I have a strong background in forest sciences with special focus on data analysis and data science. I have honed my skills my R programming, Shiny Apps development, remote sensing, spatial data analysis, and data science applied to forestry problems. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth."
 docname: CV
