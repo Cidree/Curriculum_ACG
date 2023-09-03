@@ -8,9 +8,9 @@ email: "adrian.cidre@gmail.com"
 #twitter: mariecurie
 github: Cidree
 linkedin: adrian-cidre
-date: "July 2023"
+date: "August 2023"
 headcolor: 990000
-aboutme: "Passionate about forestry and armed with years of experience in the field, I bring a wealth of knowledge and expertise to any organization. I have a strong background in forest sciences with special focus on data analysis and data science. I have honed my skills my R programming, Shiny Apps development, remote sensing, spatial data analysis, and data science applied to forestry problems. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth."
+aboutme: "I have a strong background in forest sciences with special interest on data analysis and data science. I have honed my skills on R programming, Shiny Apps development, remote sensing, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth."
 docname: CV
 language: en
 output: vitae::awesomecv
@@ -64,11 +64,14 @@ tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     
     # UCO ----
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-FAGESOS",
+    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "PROJECT --- LIFE-FAGESOS",
     
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, Markdown, SQL, HTML, CSS",
+    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "LANGUAGES USED --- R, Markdown, SQL, HTML, CSS",
     
-    "Research Assistant", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, Shiny, Quarto, ArcGIS Pro, Google Earth Engine, QGIS, PostgreSQL+PostGIS, VS Code, Tableau",
+    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> Present", NA, "Córdoba - Spain", "TOOLS USED --- RStudio, Shiny, Quarto, ArcGIS Pro, Google Earth Engine, QGIS, PostgreSQL+PostGIS, VS Code, GitHub",
+    
+    # Teaching Udemy ----
+    "R Teacher", "Udemy", "July", 2023, "--> Present", NA, "Online", "COURSES --- https://www.udemy.com/user/adrian-cidre-gonzalez-2/",
     
     # FIREFIGHTING ----
     "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2022 --- Technician of wildland fire helitack crew",
@@ -96,7 +99,6 @@ tribble(
 
 ```
 
-\newpage
 
 # Skills  
 
@@ -106,7 +108,7 @@ tribble(
     "Programming Languages", "R, JavaScript for Google Earth Engine, Python",
     "Other Languages", "Markdown, CSS, HTML, SQL",
     
-    "Toolkit", "RStudio, Shiny Applications, Quarto, ArcGIS Pro, QGIS, PostgreSQL, PostGIS, VS Code, Tableau"
+    "Toolkit", "RStudio, Shiny Applications, Quarto, ArcGIS Pro, QGIS, PostgreSQL, PostGIS, MongoDB Atlas, Git & GitHub, Learning AWS EC2"
 ) |> 
   detailed_entries(
     with = area,
@@ -142,7 +144,9 @@ tribble(
     
     # Business Science University
     "Business Science University", "Data Science for Business Part 1",
+    "Business Science University", "Data Science for Business Part 2",
     "Business Science University", "Shiny Web Applications Part 1",
+    "Business Science University", "Shiny Web Applications Part 2 (in progress)",
     
     # Udemy (R)
     "Courses of R in Udemy", "Artificial Intelligence Bootcamp in R Programming",
