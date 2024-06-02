@@ -1,0 +1,230 @@
+---
+name: "Adrián"
+surname: "Cidre González"
+position: "Ingeniero Forestal | Ciencia de Datos Geospaciales"
+address: "Norwegian University of Life Sciences"
+profilepic: "img/me.jpg"
+email: "adrian.cidre@gmail.com"
+www: "adrian-cidre.com"
+
+#twitter: mariecurie
+github: Cidree
+date: "Junio 2024"
+headcolor: 990000
+aboutme: "Tengo una sólida formación en ciencias forestales, con experiencia en el uso de herramientas de análisis de datos y herramientas geoespaciales. Soy un apasionado de la programación en R y Python, y me encanta trabajar con datos geoespaciales produciendo resultados de valor. Me considero una persona proactiva, con habilidades de comunicación y trabajo en equipo, y con una gran capacidad de aprendizaje."
+docname: CV
+language: es
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+```
+
+# Formación
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  
+  "Universidad de Córdoba", "2022-2023", "Máster en Geomática, Teledetección y Modelos Espaciales aplicados a la Gestión Forestal", "Córdoba, España",
+  
+  "Universidad Nacional de Eduación a Distancia (UNED)", "2022-2023", "Diploma de Experto Universitario - Métodos Avanzados de Estadística Aplicada", "Online",
+  
+  "Universidad de Santiago de Compostela", "2018-2022", "Grado en Ingeniería Forestal y del Medio Natural", "Lugo, España",
+  
+  "IES Plurilingüe San Rosendo", "2016-2018", "Ciclo Superior en Gestión Forestal y del Medio Natural", "Mondoñedo, España",
+) |> 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Movilidad
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  
+  "Norwegian University of Life Sciences", "Marzo 2024 -> Mayo 2024", "Erasmus+ Internship - Asistente de Investigación", "Ås, Noruega",
+  
+   "Mendel University in Brno", "Marzo 2022 -> Mayo 2022", "Erasmus+ Internship - Forestal", "Brno, República Checa",
+  
+  "Universidad de Córdoba", "Septiembre 2021 -> Febrero 2022", "SICUE - Movilidad de estudios", "Córdoba, España",
+  
+   "University of Eastern Finland", "Enero 2021 -> Junio 2021", "Erasmus+ - Movilidad de estudios", "Joensuu, Finlandia"
+) |> 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Experiencia laboral
+
+```{r}
+tribble(
+    ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+    
+    # UCO ----
+    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Proyecto --- LIFE-FAGESOS",
+    
+    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Lenguajes --- R, Python, Markdown, SQL, HTML, CSS", 
+    
+    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Herramientas --- R, Shiny, Quarto, Python, Google Earth Engine, QGIS, ArcGIS Pro, PostgreSQL+PostGIS, GitHub, Docker",
+    
+    # Teaching Udemy ----
+    "Profesor de R", "Udemy", "Julio", 2023, "--> Actualidad", NA, "Online", "Cursos --- https://adrian-cidre.com/courses.html",
+    
+    # FIREFIGHTING ----
+    "Bombero Forestal", "Repoblación y Bosquetes, S.A.", "Verano", 2021, "--> Verano", 2022, "Galicia - España", "2022 --- Técnico brigada helitransportada",
+    
+    "Bombero Forestal", "Repoblación y Bosquetes, S.A.", "Verano", 2021, "--> Verano", 2022, "Galicia - España", "2021 --- Capataz brigada helitransportada",
+    
+    "Bombero Forestal", "Demontes, S.L.", "Verano", 2020, NA, NA, "Galicia - España", "2020 --- Peón brigada helitransportada",
+    
+    "Bombero Forestal", "Demontes, S.L.", "Verano", 2019, NA, NA, "Galicia - España", "2019 --- Peón brigada helitransportada",
+    
+    "Bombero Forestal", "Empresa Pública de Servicios Agrarios Galegos, S.A.", "Verano", 2018, NA, NA, "Galicia - España", "2018 --- Peón brigada terrestre",
+    
+    "Técnico forestal", "Servitec Medioambiente, S.L.", "Marzo", 2018, "Junio", 2018, "Galicia - España", "Tareas --- Análisis de datos espaciales en QGIS, inventario forestal",
+    
+    
+) |> 
+  detailed_entries(
+    with  = title,
+    what  = unit,
+    why   = detail,
+    when  = glue::glue("{startMonth} {startYear}  {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+
+# Habilidades  
+
+```{r}
+tribble(
+    ~area, ~skills,
+    "Lenguajes de programación", 
+    "R (top skill), 
+    Python",
+    "Especialidades",
+    "Datos Geoespaciales,
+    Análisis de datos,
+    Sistemas de Información Geográfica,
+    Procesado de datos LiDAR,
+    Teledetección,
+    Ciencia de datos,
+    Machine Learning,
+    Deep Learning,
+    Computer Vision,
+    Desarrollo de data pipelines,
+    Desarrollo de aplicaciones web,
+    Automatización de tareas",
+    
+    "Herramientas", "R, Python, Shiny, Quarto, Google Earth Engine, QGIS, PostgreSQL & PostGIS, DuckDB, HTML & CSS, MongoDB, Git & GitHub, Docker",
+    
+    "Idiomas", "Español (nativo), Gallego (nativo), Inglés (C1)",
+    
+    "Intereses", "Mi mayor aficción es viajar con mi pareja. Nos encanta conocer lugares y culturas nuevas y probar la gastronomía local. Nos gusta explorar nuevos lugares en bicicleta, caminar por la naturaleza, acampar y disfrutrar de una barbacoa al aire libre. Soñamos con algún día tener una pequeña casa en el campo donde poder formar una familia."
+) |> 
+  detailed_entries(
+    with = area,
+    what = skills
+)
+```
+
+# Proyectos y publicaciones
+
+```{r}
+tribble(
+    ~area, ~accomplishment, ~year, ~where, ~detail,
+    
+    "Fragmentation and Connectivity in dehesa Ecosystems Associated with Cerambyx spp. Dispersion and Control: A Graph-Theory Approach", "Universidad de Córdoba", 2024, "Publicación", "https://doi.org/10.3390/f15040648",
+    
+    "A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems", "Universidad de Córdoba", 2023, "Trabajo de Fin de Máster", "Nota: 10 - Accésit al mejor TFM por la Sociedad Española de Ciencias Forestales (SECF)",
+    
+    "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "Universidad de Córdoba", 2023, "Proyecto LIFE", "Desarrollo de modelos de riesgo de Phytophthora cinnamomi en Europa Occidental",
+    
+    "Fragmentación y conectividad en ecosistemas de dehesa asociados a la dispersión de Cerambícidos en Sierra Morena: Un enfoque desde la Teoría de Grafos", "Universidad de Córdoba", 2022, "Trabajo de Fin de Grado", "Matrícula de Honor"
+    
+) |> 
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+```
+
+# Educación complementaria 
+
+```{r}
+tribble(
+    ~area, ~detail,
+    
+    # Business Science University
+    "Business Science University", "Data Science for Business Part 1", 
+    "Business Science University", "Data Science for Business Part 2", 
+    "Business Science University", "Shiny Web Applications Part 1", 
+    "Business Science University", "Shiny Web Applications Part 2", 
+    "Business Science University", "High Performance Time Series", 
+    
+    # Udemy (R)
+    "Formación en Udemy", "Machine Learning A-Z: AI Python & R + ChatGPT Prize (2024)",
+    "Formación en Udemy", "R Shiny Interactive Web Apps - Next Level Data Visualization", 
+    "Formación en Udemy", "Artificial Intelligence Bootcamp in R Programming", 
+    "Formación en Udemy", "Survival Analysis in R",
+    "Formación en Udemy", "Spatial Data Analysis with R and QGIS",
+    "Formación en Udemy", "Learn ggplot2 in R for Data Visualization",
+    "Formación en Udemy", "Curso avanzado de estadística multivariante con R y Python", 
+    "Formación en Udemy", "Ecology in R", 
+    "Formación en Udemy", "Mastering Data Visualization: Theory and Foundations", 
+    "Formación en Udemy", "The Complete SQL Bootcamp: Go from Zero to Hero", 
+    "Formación en Udemy", "Introduction to Spatial Databases with PostGIS and QGIS 3", 
+    "Formación en Udemy", "Python for Data Science and Machine Learning Bootcamp", 
+    "Formación en Udemy", "Google Earth Engine y Machine Learning: de cero a experto",
+    "Formación en Udemy", "CSS - The Complete Guide 2024",
+    "Formación en Udemy", "YOLOv7, YOLOv8, YOLOv9 - Deep Learning Course",
+    "Formación en Udemy", "GitHub Actions - The Complete Guide",
+    
+    # Other courses
+    "Formación Forestal", "Inventarios Naturales de Flora y Fauna (75 horas)",
+    "Formación Forestal", "Incendios Forestales - Efectos Medioambientales (120 horas)",
+    "Formación Forestal", "Restauración ecológica de ecosistemas forestales (50 horas)",
+    "Formación Forestal", "Sistemas de Información Geográfica con QGIS (60 horas)",
+    "Formación Forestal", "Incendios Forestales - Efectos Medioambientales (120 horas)",
+
+) |> 
+   detailed_entries(
+    with = area,
+    why = detail
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

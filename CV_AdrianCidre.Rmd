@@ -12,7 +12,7 @@ github: Cidree
 linkedin: adrian-cidre
 date: "March 2024"
 headcolor: 990000
-aboutme: "I have a strong background in forest sciences with special interest on data analysis and data science. I have honed my skills on R programming, Shiny Apps development, remote sensing, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth."
+aboutme: "I have a strong background in forest sciences with special interest on data analysis and data science. I have honed my skills on remote sensing, applications development, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth. In my toolkit I include R, Python, Google Earth Engine, Shiny, Quarto, DuckDB, among others."
 docname: CV
 language: en
 output: vitae::awesomecv
@@ -66,7 +66,7 @@ tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     
     # NMBU ----
-    "Assistant Technician", "Norwegian University of Life Sciences", "March", 2024, "--> May", 2024, "Ås - Norway", "Erasmus+ Internship from Master",
+    "Assistant Technician", "Norwegian University of Life Sciences", "March", 2024, "--> May", 2024, "Ås - Norway", "Erasmus+ Internship",
     
     # UCO ----
     "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> December", 2023, "Córdoba - Spain", "PROJECT --- LIFE-FAGESOS",
@@ -112,14 +112,17 @@ tribble(
     ~area, ~skills,
     "Programming Languages", 
     "R (top skill), 
-    JavaScript for Google Earth Engine",
-    "Other Languages",
-    "Markdown,
-    CSS,
-    HTML, 
-    SQL",
+    Python",
+    "Expertise",
+    "Geospatial Data,
+    Data Analysis,
+    Data Science,
+    Machine Learning,
+    Deep Learning,
+    Computer Vision,
+    Applications development",
     
-    "Toolkit", "RStudio, Shiny, Quarto, Google Earth Engine, ArcGIS Pro, QGIS, PostgreSQL & PostGIS, DuckDB, MongoDB Atlas, Git & GitHub, Docker"
+    "Toolkit", "R & Python, Shiny, Quarto, Google Earth Engine, QGIS, PostgreSQL & PostGIS, DuckDB, HTML & CSS, MongoDB, Git & GitHub, Docker"
 ) |> 
   detailed_entries(
     with = area,
@@ -133,12 +136,12 @@ tribble(
 tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
     
-    "A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems", "University of Córdoba", 2023, "Master Thesis", "Publication pending",
+    "A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems", "University of Córdoba", 2023, "Master Thesis", "Accésit from SECF",
     
     "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "University of Córdoba", 2023, "LIFE Project", "Developted models of Phytophothora cinnamomi risk at Occidental Europe level",
     
     
-    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", "Publication on review"
+    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", "https://doi.org/10.3390/f15040648"
     
 ) |> 
   detailed_entries(
