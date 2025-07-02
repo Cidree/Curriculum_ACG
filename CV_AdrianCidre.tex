@@ -1,0 +1,230 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{990000}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{img/me-tenerife.jpg}
+\name{Adrián}{Cidre González}
+
+\position{Forestry Researcher}
+\address{Gesplan S.A. \textbar{} University of Córdoba}
+
+\email{\href{mailto:adrian.cidre@gmail.com}{\nolinkurl{adrian.cidre@gmail.com}}}
+\homepage{adrian-cidre.com}
+\github{Cidree}
+\linkedin{adrian-cidre}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I have a strong background in forest sciences with special
+interest on remote sensing and data science. I have honed my skills on
+remote sensing, applications development, spatial data analysis, and
+data science applied to forestry. I am eager to apply my skills and
+enthusiasm in a dynamic and challenging environment, where I can make a
+meaningful contribution and foster growth. In my toolkit I include R,
+Python, Google Earth Engine, Shiny, Quarto, DuckDB, among others.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {July 2025}
+    {Adrián Cidre González~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\section{Education}\label{education}
+
+\begin{cventries}
+    \cventry{University of Córdoba}{PhD in Biosciences and Agri-food Sciences}{Córdoba, Spain}{2024-Current}{}\vspace{-4.0mm}
+    \cventry{University of Córdoba}{Master in Geomatics, Remote Sensing and Spatial Models Applied to Forest Management}{Córdoba, Spain}{2022-2023}{}\vspace{-4.0mm}
+    \cventry{National University of Distance Education}{Expert Title in Advance Applied Statistics}{Online}{2022-2023}{}\vspace{-4.0mm}
+    \cventry{University of Santiago de Compostela}{Bachelor in Forestry and Landscape Engineering}{Lugo, Spain}{2018-2022}{}\vspace{-4.0mm}
+    \cventry{IES Plurilingüe San Rosendo}{Certificate of Higher Education in Forestry}{Mondoñedo, Spain}{2016-2018}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Work Experience}\label{work-experience}
+
+\begin{cventries}
+    \cventry{Gesplan S.A. - Canary pine silviculture}{Forest Engineer}{Tenerife - Spain}{January 2025  --> Present }{}\vspace{-4.0mm}
+    \cventry{University of Córdoba - Bio+A Málaga Project}{Forestry Engineer - Geomatics}{Córdoba - Spain}{September 2024  --> December 2024 }{}\vspace{-4.0mm}
+    \cventry{University of Córdoba - LIFE FAGESOS}{Forestry Engineer - Geomatics}{Córdoba - Spain}{September 2022  --> December 2023}{}\vspace{-4.0mm}
+    \cventry{Udemy - https://adrian-cidre.com/courses.html}{R Instructor}{Online}{July 2023  --> Present }{}\vspace{-4.0mm}
+    \cventry{Repoblación y Bosquetes, S.A. - Aerial Squad Technician}{Wildland Firefighter}{Galicia - Spain}{Summer 2022   }{}\vspace{-4.0mm}
+    \cventry{Repoblación y Bosquetes, S.A. - Aerial Squad Crew Leader}{Wildland Firefighter}{Galicia - Spain}{Summer 2021   }{}\vspace{-4.0mm}
+    \cventry{Demontes, S.L. - Aerial Squad Crew Member}{Wildland Firefighter}{Galicia - Spain}{Summer 2020   }{}\vspace{-4.0mm}
+    \cventry{Demontes, S.L. - Aerial Squad Crew Member}{Wildland Firefighter}{Galicia - Spain}{Summer 2019   }{}\vspace{-4.0mm}
+    \cventry{SEAGA, S.A. - Ground Brigade Crew Member}{Wildland Firefighter}{Galicia - Spain}{Summer 2018   }{}\vspace{-4.0mm}
+    \cventry{Servitec Medioambiente, S.L. - Forest Inventory}{Forestry Technician}{Galicia - Spain}{March 2018  --> June 2018}{}\vspace{-4.0mm}
+\end{cventries}
+
+\newpage
+
+\section{Mobility}\label{mobility}
+
+\begin{cventries}
+    \cventry{Norwegian University of Life Sciences}{Erasmus+ Internship - Research Assistant}{Ås, Norway}{March 2024 -> May 2024}{}\vspace{-4.0mm}
+    \cventry{Mendel University in Brno}{Erasmus+ Internship - Forestry}{Brno, Czech Republic}{March 2022 -> May 2022}{}\vspace{-4.0mm}
+    \cventry{University of Córdoba}{SICUE - Study Mobility}{Córdoba, Spain}{September 2021 -> February 2022}{}\vspace{-4.0mm}
+    \cventry{University of Eastern Finland}{Erasmus+ - Study Mobility}{Joensuu, Finland}{January 2021 -> June 2021}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Skills}\label{skills}
+
+\begin{cventries}
+    \cventry{R (top skill), 
+    Python}{Programming Languages}{}{}{}\vspace{-4.0mm}
+    \cventry{Geospatial Data,
+    Remote Sensing,
+    Data Analysis,
+    Data Science,
+    Machine Learning,
+    Deep Learning,
+    Computer Vision,
+    Shiny Applications}{Expertise}{}{}{}\vspace{-4.0mm}
+    \cventry{R \& Python, Shiny, Quarto, Google Earth Engine, QGIS, Orfeo Toolbox, PostgreSQL \& PostGIS, DuckDB, HTML \& CSS, MongoDB, Git \& GitHub, Docker}{Toolkit}{}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Projects}\label{projects}
+
+\begin{cventries}
+    \cventry{Universidad de Córdoba - https://doi.org/10.1016/j.ecolmodel.2025.111115}{A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems}{Master Thesis - Published}{2023}{}\vspace{-4.0mm}
+    \cventry{University of Córdoba}{LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment}{LIFE Project}{2023}{}\vspace{-4.0mm}
+    \cventry{Universidad de Córdoba - https://doi.org/10.3390/f15040648}{Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach}{Bachelor Thesis - Published}{2022}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{R packages}\label{r-packages}
+
+\begin{cventries}
+    \cventry{A small wrapper around reading/writting functions to DuckDB database in R.}{duckspatial}{}{}{}\vspace{-4.0mm}
+    \cventry{It includes functions to retrieve forestry and land cover data from various sources.}{forestdata}{}{}{}\vspace{-4.0mm}
+    \cventry{An R package for unsupervised segmentation algorithms included in Orfeo ToolBox}{OTBsegm}{}{}{}\vspace{-4.0mm}
+    \cventry{Interface between R and PostGIS-enabled PostgreSQL databses.}{rpostgis}{}{}{}\vspace{-4.0mm}
+    \cventry{An R package to accelerate the analysis of forest inventory data.}{silviculture}{}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\newpage
+
+\section{Complementary Edutation}\label{complementary-edutation}
+
+\begin{cventries}
+    \cventry{}{Business Science University}{}{}{\begin{cvitems}
+\item Data Science for Business Part 1
+\item Data Science for Business Part 2
+\item Shiny Web Applications Part 1
+\item Shiny Web Applications Part 2
+\item High Performance Time Series
+\item 
+\end{cvitems}}
+    \cventry{}{Formation in Udemy}{}{}{\begin{cvitems}
+\item Machine Learning A-Z: AI Python \& R + ChatGPT Prize (2024)
+\item R Shiny Interactive Web Apps - Next Level Data Visualization
+\item Artificial Intelligence Bootcamp in R Programming
+\item Survival Analysis in R
+\item Spatial Data Analysis with R and QGIS
+\item Learn ggplot2 in R for Data Visualization
+\item Curso avanzado de estadística multivariante con R y Python
+\item Ecology in R
+\item Mastering Data Visualization: Theory and Foundations
+\item The Complete SQL Bootcamp: Go from Zero to Hero
+\item Introduction to Spatial Databases with PostGIS and QGIS 3
+\item Python for Data Science and Machine Learning Bootcamp
+\item Google Earth Engine y Machine Learning: de cero a experto
+\item CSS - The Complete Guide 2024
+\item YOLOv7, YOLOv8, YOLOv9 - Deep Learning Course
+\item GitHub Actions - The Complete Guide
+\item 
+\end{cvitems}}
+    \cventry{}{Forestry Formation}{}{}{\begin{cvitems}
+\item Inventarios Naturales de Flora y Fauna (75 hours)
+\item Incendios Forestales - Efectos Medioambientales (120 hours)
+\item Restauración ecológica de ecosistemas forestales (50 hours)
+\item Sistemas de Información Geográfica con QGIS (60 hours)
+\item Incendios Forestales - Efectos Medioambientales (120 hours)
+\end{cvitems}}
+\end{cventries}
+
+
+
+\end{document}

@@ -10,7 +10,7 @@ www: "adrian-cidre.com"
 #twitter: mariecurie
 github: Cidree
 linkedin: adrian-cidre
-date: "June 2025"
+date: "July 2025"
 headcolor: 990000
 aboutme: "I have a strong background in forest sciences with special interest on remote sensing and data science. I have honed my skills on remote sensing, applications development, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth. In my toolkit I include R, Python, Google Earth Engine, Shiny, Quarto, DuckDB, among others."
 docname: CV
