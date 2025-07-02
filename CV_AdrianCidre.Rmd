@@ -2,17 +2,17 @@
 name: "Adrián"
 surname: "Cidre González"
 position: "Forestry Researcher"
-address: "Norwegian University of Life Sciences"
-profilepic: "img/me.jpg"
+address: "Gesplan S.A. | University of Córdoba"
+profilepic: "img/me-tenerife.jpg"
 email: "adrian.cidre@gmail.com"
 www: "adrian-cidre.com"
 
 #twitter: mariecurie
 github: Cidree
 linkedin: adrian-cidre
-date: "March 2024"
+date: "June 2025"
 headcolor: 990000
-aboutme: "I have a strong background in forest sciences with special interest on data analysis and data science. I have honed my skills on remote sensing, applications development, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth. In my toolkit I include R, Python, Google Earth Engine, Shiny, Quarto, DuckDB, among others."
+aboutme: "I have a strong background in forest sciences with special interest on remote sensing and data science. I have honed my skills on remote sensing, applications development, spatial data analysis, and data science applied to forestry. I am eager to apply my skills and enthusiasm in a dynamic and challenging environment, where I can make a meaningful contribution and foster growth. In my toolkit I include R, Python, Google Earth Engine, Shiny, Quarto, DuckDB, among others."
 docname: CV
 language: en
 output: vitae::awesomecv
@@ -43,16 +43,14 @@ library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
   
+  "University of Córdoba", "2024-Current", "PhD in Biosciences and Agri-food Sciences", "Córdoba, Spain",
+  
   "University of Córdoba", "2022-2023", "Master in Geomatics, Remote Sensing and Spatial Models Applied to Forest Management", "Córdoba, Spain",
   
   
   "National University of Distance Education", "2022-2023", "Expert Title in Advance Applied Statistics", "Online",
   
   "University of Santiago de Compostela", "2018-2022", "Bachelor in Forestry and Landscape Engineering", "Lugo, Spain",
-  
-  "University of Córdoba", "09/2021-02/2022", "SICUE Exchange Programme - Forestry Engineering", "Córdoba, Spain",
-  
-  "University of Eastern Finland", "01/2021-06/2021", "Erasmus - Forestry Engineering", "Joensuu, Finland",
   
   "IES Plurilingüe San Rosendo", "2016-2018", "Certificate of Higher Education in Forestry", "Mondoñedo, Spain",
 ) |> 
@@ -65,32 +63,29 @@ tribble(
 tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     
-    # NMBU ----
-    "Assistant Technician", "Norwegian University of Life Sciences", "March", 2024, "--> May", 2024, "Ås - Norway", "Erasmus+ Internship",
+    # Gesplan -----
+    "Forest Engineer", "Gesplan S.A. - Canary pine silviculture", "January", 2025, "--> Present", NA, "Tenerife - Spain",  NA,
     
     # UCO ----
-    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> December", 2023, "Córdoba - Spain", "PROJECT --- LIFE-FAGESOS",
+    "Forestry Engineer - Geomatics", "University of Córdoba - Bio+A Málaga Project", "September", 2024, "--> December 2024", NA, "Córdoba - Spain", NA,
     
-    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> December", 2023, "Córdoba - Spain", "LANGUAGES USED --- R, Markdown, SQL, HTML, CSS", 
-    
-    "Forest Engineer - GIS", "University of Córdoba", "September", 2022, "--> December", 2023, "Córdoba - Spain", "TOOLS USED --- RStudio, Shiny, Quarto, ArcGIS Pro, Google Earth Engine, QGIS, PostgreSQL+PostGIS, VS Code, GitHub, Docker",
+    "Forestry Engineer - Geomatics", "University of Córdoba - LIFE FAGESOS", "September", 2022, "--> December", 2023, "Córdoba - Spain", NA,
     
     # Teaching Udemy ----
-    "R Teacher", "Udemy", "July", 2023, "--> Present", NA, "Online", "COURSES --- https://adrian-cidre.com/courses.html",
+    "R Instructor", "Udemy - https://adrian-cidre.com/courses.html", "July", 2023, "--> Present", NA, "Online", NA,
     
     # FIREFIGHTING ----
-    "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2022 --- Technician of wildland fire helitack crew",
-    "Wildland Firefighter", "Repoblación y Bosquetes, S.A.", "Summer", 2021, "--> Summer", 2022, "Galicia - Spain", "2021 --- Foreman of wildland fire helitack crew",
+    "Wildland Firefighter", "Repoblación y Bosquetes, S.A. - Aerial Squad Technician", "Summer", 2022, NA, NA, "Galicia - Spain", NA,
     
-    "Forestry Erasmus Internship", "University of Brno", "March", 2021, "--> May", 2022, "Brno - Czech Republic", "TASKS --- Reforestation, pruning, forest inventory",
+    "Wildland Firefighter", "Repoblación y Bosquetes, S.A. - Aerial Squad Crew Leader", "Summer", 2021, NA, NA, "Galicia - Spain", NA,
     
-    "Wildland Firefighter", "Demontes, S.L.", "Summer", 2020, NA, NA, "Galicia - Spain", "2020 --- Wildland firefighter at helitack crew",
+    "Wildland Firefighter", "Demontes, S.L. - Aerial Squad Crew Member", "Summer", 2020, NA, NA, "Galicia - Spain", NA,
     
-    "Wildland Firefighter", "Demontes, S.L.", "Summer", 2019, NA, NA, "Galicia - Spain", "2019 --- Wildland firefighter at helitack crew",
+    "Wildland Firefighter", "Demontes, S.L. - Aerial Squad Crew Member", "Summer", 2019, NA, NA, "Galicia - Spain", NA,
     
-    "Wildland Firefighter", "Empresa Pública de Servicios Agrarios Galegos, S.A.", "Summer", 2018, NA, NA, "Galicia - Spain", "2018 --- Wildland firefighter at terrestial crew",
+    "Wildland Firefighter", "SEAGA, S.A. - Ground Brigade Crew Member", "Summer", 2018, NA, NA, "Galicia - Spain", NA,
     
-    "Forestry Internship", "Servitec Medioambiente, S.L.", "March", 2018, "June", 2018, "Galicia - Spain", "TASKS --- Data analysis in QGIS, forest inventory",
+    "Forestry Technician", "Servitec Medioambiente, S.L. - Forest Inventory", "March", 2018, "--> June", 2018, "Galicia - Spain", NA,
     
     
 ) |> 
@@ -98,11 +93,30 @@ tribble(
     with  = title,
     what  = unit,
     why   = detail,
-    when  = glue::glue("{startMonth} {startYear}  {endMonth} {endYear}",.na = ""),
+    when  = glue::glue("{startMonth} {startYear}  {endMonth} {endYear}", .na = ""),
     where = where
   )
-
 ```
+
+\newpage
+
+# Mobility
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  
+  "Norwegian University of Life Sciences", "March 2024 -> May 2024", "Erasmus+ Internship - Research Assistant", "Ås, Norway",
+  
+  "Mendel University in Brno", "March 2022 -> May 2022", "Erasmus+ Internship - Forestry", "Brno, Czech Republic",
+  
+  "University of Córdoba", "September 2021 -> February 2022", "SICUE - Study Mobility", "Córdoba, Spain",
+  
+  "University of Eastern Finland", "January 2021 -> June 2021", "Erasmus+ - Study Mobility", "Joensuu, Finland"
+) |> 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
 
 
 # Skills  
@@ -115,14 +129,15 @@ tribble(
     Python",
     "Expertise",
     "Geospatial Data,
+    Remote Sensing,
     Data Analysis,
     Data Science,
     Machine Learning,
     Deep Learning,
     Computer Vision,
-    Applications development",
+    Shiny Applications",
     
-    "Toolkit", "R & Python, Shiny, Quarto, Google Earth Engine, QGIS, PostgreSQL & PostGIS, DuckDB, HTML & CSS, MongoDB, Git & GitHub, Docker"
+    "Toolkit", "R & Python, Shiny, Quarto, Google Earth Engine, QGIS, Orfeo Toolbox, PostgreSQL & PostGIS, DuckDB, HTML & CSS, MongoDB, Git & GitHub, Docker"
 ) |> 
   detailed_entries(
     with = area,
@@ -136,12 +151,13 @@ tribble(
 tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
     
-    "A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems", "University of Córdoba", 2023, "Master Thesis", "Accésit from SECF",
+
     
-    "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "University of Córdoba", 2023, "LIFE Project", "Developted models of Phytophothora cinnamomi risk at Occidental Europe level",
+    "A Combined Habitat Suitability and Process-Based Model to Assess the Suitable Habitat and Virulence Potential of Phytophthora cinnamomi in Mediterranean Forest Ecosystems", "Universidad de Córdoba - https://doi.org/10.1016/j.ecolmodel.2025.111115", 2023, "Master Thesis - Published", NA,
     
+    "LIFE-FAGESOS WP2 --- FAGESOS-GIS: Creation of a GIS-based service platform for disease impact and risk assessment", "University of Córdoba", 2023, "LIFE Project", NA,
     
-    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "University of Córdoba", 2022, "Bachelor Thesis", "https://doi.org/10.3390/f15040648"
+    "Fragmentation and and connectivity in dehesa ecosystems associated to Cerambycids dispersion in Sierra Morena: A Graph-Theory approach", "Universidad de Córdoba - https://doi.org/10.3390/f15040648", 2022, "Bachelor Thesis - Published", NA
     
 ) |> 
   detailed_entries(
@@ -153,6 +169,27 @@ tribble(
   )
 ```
 
+
+
+# R packages
+
+```{r}
+tribble(
+    ~package, ~description,
+    "duckspatial", "A small wrapper around reading/writting functions to DuckDB database in R.",
+    "forestdata", "It includes functions to retrieve forestry and land cover data from various sources.",
+    "OTBsegm", "An R package for unsupervised segmentation algorithms included in Orfeo ToolBox",
+    "rpostgis", "Interface between R and PostGIS-enabled PostgreSQL databses.",
+    "silviculture", "An R package to accelerate the analysis of forest inventory data."
+) |> 
+  detailed_entries(
+    with = package,
+    what = description
+)
+```
+
+\newpage
+
 # Complementary Edutation  
 
 ```{r}
@@ -160,30 +197,38 @@ tribble(
     ~area, ~detail,
     
     # Business Science University
-    "Business Science University", "Data Science for Business Part 1",
-    "Business Science University", "Data Science for Business Part 2",
-    "Business Science University", "Shiny Web Applications Part 1",
-    "Business Science University", "Shiny Web Applications Part 2",
-    "Business Science University", "High Performance Time Series",
+    "Business Science University", "Data Science for Business Part 1", 
+    "Business Science University", "Data Science for Business Part 2", 
+    "Business Science University", "Shiny Web Applications Part 1", 
+    "Business Science University", "Shiny Web Applications Part 2", 
+    "Business Science University", "High Performance Time Series", 
+    "Business Science University", "", 
     
     # Udemy (R)
-    "Courses of R in Udemy", "R Shiny Interactive Web Apps - Next Level Data Visualization",
-    "Courses of R in Udemy", "Artificial Intelligence Bootcamp in R Programming",
-    "Courses of R in Udemy", "Survival Analysis in R",
-    "Courses of R in Udemy", "Spatial Data Analysis with R and QGIS",
-    "Courses of R in Udemy", "Learn ggplot2 in R for Data Visualization",
-    "Courses of R in Udemy", "Curso avanzado de estadística multivariante con R y Python",
-    "Courses of R in Udemy", "Ecology in R",
-    
-    # Udemy (others)
-    "Other Courses in Udemy", "Mastering Data Visualization: Theory and Foundations",
-    "Other Courses in Udemy", "The Complete SQL Bootcamp: Go from Zero to Hero",
-    "Other Courses in Udemy", "Introduction to Spatial Databases with PostGIS and QGIS 3",
-    "Other Courses in Udemy", "Python for Data Science and Machine Learning Bootcamp",
-    "Other Courses in Udemy", "Google Earth Engine y Machine Learning: de cero a experto",
+    "Formation in Udemy", "Machine Learning A-Z: AI Python & R + ChatGPT Prize (2024)",
+    "Formation in Udemy", "R Shiny Interactive Web Apps - Next Level Data Visualization", 
+    "Formation in Udemy", "Artificial Intelligence Bootcamp in R Programming", 
+    "Formation in Udemy", "Survival Analysis in R",
+    "Formation in Udemy", "Spatial Data Analysis with R and QGIS",
+    "Formation in Udemy", "Learn ggplot2 in R for Data Visualization",
+    "Formation in Udemy", "Curso avanzado de estadística multivariante con R y Python", 
+    "Formation in Udemy", "Ecology in R", 
+    "Formation in Udemy", "Mastering Data Visualization: Theory and Foundations", 
+    "Formation in Udemy", "The Complete SQL Bootcamp: Go from Zero to Hero", 
+    "Formation in Udemy", "Introduction to Spatial Databases with PostGIS and QGIS 3", 
+    "Formation in Udemy", "Python for Data Science and Machine Learning Bootcamp", 
+    "Formation in Udemy", "Google Earth Engine y Machine Learning: de cero a experto",
+    "Formation in Udemy", "CSS - The Complete Guide 2024",
+    "Formation in Udemy", "YOLOv7, YOLOv8, YOLOv9 - Deep Learning Course",
+    "Formation in Udemy", "GitHub Actions - The Complete Guide",
+    "Formation in Udemy", "",
     
     # Other courses
-    "Other relevant courses", "Inventarios Naturales de Flora y Fauna"
+    "Forestry Formation", "Inventarios Naturales de Flora y Fauna (75 hours)",
+    "Forestry Formation", "Incendios Forestales - Efectos Medioambientales (120 hours)",
+    "Forestry Formation", "Restauración ecológica de ecosistemas forestales (50 hours)",
+    "Forestry Formation", "Sistemas de Información Geográfica con QGIS (60 hours)",
+    "Forestry Formation", "Incendios Forestales - Efectos Medioambientales (120 hours)",
 
 ) |> 
    detailed_entries(

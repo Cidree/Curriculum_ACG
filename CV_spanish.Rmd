@@ -2,14 +2,14 @@
 name: "Adrián"
 surname: "Cidre González"
 position: "Ingeniero Forestal | Ciencia de Datos Geospaciales"
-address: "Norwegian University of Life Sciences"
+address: "Universidad de Córdoba"
 profilepic: "img/me.jpg"
 email: "adrian.cidre@gmail.com"
 www: "adrian-cidre.com"
 
 #twitter: mariecurie
 github: Cidree
-date: "Junio 2024"
+date: "Noviembre 2024"
 headcolor: 990000
 aboutme: "Tengo una sólida formación en ciencias forestales, con experiencia en el uso de herramientas de análisis de datos y herramientas geoespaciales. Soy un apasionado de la programación en R y Python, y me encanta trabajar con datos geoespaciales produciendo resultados de valor. Me considero una persona proactiva, con habilidades de comunicación y trabajo en equipo, y con una gran capacidad de aprendizaje."
 docname: CV
@@ -78,11 +78,13 @@ tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     
     # UCO ----
-    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Proyecto --- LIFE-FAGESOS",
+    "Ingeniero Forestal - Geomática", "Universidad de Córdoba", "Septiembre", 2024, "--> Actualidad", NA, "Córdoba - España", "Proyecto --- Bio+Malaga",
     
-    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Lenguajes --- R, Python, Markdown, SQL, HTML, CSS", 
+    "Ingeniero Forestal - Geomática", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Proyecto --- LIFE-FAGESOS",
     
-    "Ingeniero Forestal - GIS", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Herramientas --- R, Shiny, Quarto, Python, Google Earth Engine, QGIS, ArcGIS Pro, PostgreSQL+PostGIS, GitHub, Docker",
+    "Ingeniero Forestal - Geomática", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Lenguajes --- R, Python, Markdown, SQL, HTML, CSS", 
+    
+    "Ingeniero Forestal - Geomática", "Universidad de Córdoba", "Septiembre", 2022, "--> Diciembre", 2023, "Córdoba - España", "Herramientas --- R, Shiny, Quarto, Python, Google Earth Engine, QGIS, ArcGIS Pro, PostgreSQL+PostGIS, GitHub, Docker",
     
     # Teaching Udemy ----
     "Profesor de R", "Udemy", "Julio", 2023, "--> Actualidad", NA, "Online", "Cursos --- https://adrian-cidre.com/courses.html",
@@ -138,6 +140,8 @@ tribble(
     "Herramientas", "R, Python, Shiny, Quarto, Google Earth Engine, QGIS, PostgreSQL & PostGIS, DuckDB, HTML & CSS, MongoDB, Git & GitHub, Docker",
     
     "Idiomas", "Español (nativo), Gallego (nativo), Inglés (C1)",
+    
+    "Otros", "Carnet de conducir, Piloto de drones A1/A3",
     
     "Intereses", "Mi mayor aficción es viajar con mi pareja. Nos encanta conocer lugares y culturas nuevas y probar la gastronomía local. Nos gusta explorar nuevos lugares en bicicleta, caminar por la naturaleza, acampar y disfrutrar de una barbacoa al aire libre. Soñamos con algún día tener una pequeña casa en el campo donde poder formar una familia."
 ) |> 
